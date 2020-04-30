@@ -15,8 +15,8 @@
       %td= simple_format(h(@task.description), {}, sanitize: false, wrapper_tag: "div")
     %tr
       %th= Task.human_attribute_name(:created_at)
-      %td= @task.created_at
+      %td= l @task.created_at
     %tr
       %th= Task.human_attribute_name(:updated_at)
-      %td= @task.updated_at
+      %td= l @task.updated_at
 = link_to '編集', edit_task_path,  class: "btn btn-primary mr-3"
