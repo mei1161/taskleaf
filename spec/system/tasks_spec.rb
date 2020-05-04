@@ -46,5 +46,17 @@ describe 'タスク管理機能', type: :system do
     end
   end
 
+  describe '新規作成機能' do
+    let(:login_user) { user_a }
+
+    before do
+      visit new_task_path
+      fill_in '名称', with: task_name
+      click_button '登録する'
+    end
+
+    
+  end
+
 end
 
