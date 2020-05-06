@@ -18,7 +18,7 @@
 %table.table.table-hover
   %thead.thead-default
     %tr
-      %th= sort_link(@q, :name, default_order: :desc)
+      %th= sort_link(@q, :name)
       %th= Task.human_attribute_name(:created_at)
       %th
   %tbody
