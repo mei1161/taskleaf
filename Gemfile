@@ -65,3 +65,7 @@ gem 'bcrypt'
 gem 'rails_autolink'
 gem 'dotenv-rails'
 gem 'ransack'
+group :development do
+  gem 'letter_opener' # 追加
+  gem 'letter_opener_web' # 追加
+end
