@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  if Rails.env.development?
+  if Rails.env.development? && defined?(LetterOpenerWeb)
     mount LetterOpenerWeb::Engine, at: '/letter_opener'
   end
   get '/login', to: 'sessions#new'
