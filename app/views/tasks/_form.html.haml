@@ -9,5 +9,7 @@
     = f.text_field :name, class: 'form-control', id: 'task_name'
   .form-group
     = f.label :description
-    = f.text_area :description, class: 'form-control', id: 'task_description'
+  .form-group
+    = f.label :image
+    = f.file_field :image, class: 'form-control'
   = f.submit nil, class: 'btn btn-primary'
