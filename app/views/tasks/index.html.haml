@@ -26,7 +26,7 @@
       %th
   %tbody
   - @tasks.each do |task|
-    %tr
+    %tr{ :id => "task-#{task.id}"}
       %td= link_to task.name, task
       %td= l task.created_at
       %td
